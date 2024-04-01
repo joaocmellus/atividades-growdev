@@ -1,0 +1,36 @@
+body {
+    margin: 0 5%;
+}
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
+.nav p, .nav a {
+    display: inline-block;
+    margin: 0 20px;
+}
+.nav {
+    padding-inline-start: 40px;
+}
+footer li, nav li {
+    display: inline-block;
+    margin: 20px 0;            
+    list-style: none;
+}
+footer ul, nav ul {
+    width: 100%;
+    padding: 0;
+}
+.t-center {
+    text-align: center;
+}
+.d-flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.column {
+    flex-direction: column;
+    align-items: center;
+}

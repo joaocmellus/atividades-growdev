@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo Front-End I</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/732/732212.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,700;1,500&display=swap');
+        * {
+            font-family: Poppins;
+            color: #252525;
+        }
+        body {
+            margin: 0;
+            display: flex;
+            background-color: #fcfcfc;
+        }
+        aside {
+            width: 25%;
+            background-color: #f1916d;
+            padding: 20px 2%;
+        }
+        aside h2 {
+            text-align: center;
+        }
+        li {
+            margin-bottom: 20px;
+        }
+        li > a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 150ms;
+            
+            &:hover{
+                color: white;
+            }
+        }
+        
+        main {
+            margin: 20px 5%;
+            display: flex;
+            width: 75%;
+            flex-direction: column;
+            gap: 50px;
+        }
+        #stacks {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .tech {
+            display: flex;
+            padding: 20px;
+            border-radius: 40px;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            gap: 50px;
+        }
+        .tech img {
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Revisão Módulo Front-End I</h1>
+        </header>
+        <section>
+            <h2 id="1">O que é desenvolvimento Front-End?</h2>
+            <p>
+                Desenvolvimento Front-End pode ser classificada como a programação da parte visual do desenvolvimento para web, englobando a construção de interface gráfica, interação e ações no lado do cliente de sites e web apps.
+            </p>
+            <p>
+                Mesmo sendo constantemente confundido com o design, tratam-se de áreas diferentes, enquanto o designer vai usar ferramentas visuais para desenhar as intefaces, o desenvolvedor Front-End estará mais próxima do código em si, que irá rodar num navegador Web, como Chrome, Firefox, etc.
+            </p>
+            <img src="https://www.sosdigital.com.br/wp-content/uploads/2020/09/frontend-scaled.jpg" width="450px">
+        </section>
+        <section>
+            <h2 id="2">O que faz o desenvolvedor Front-End?</h2>
+            <p>
+                Entre as funções do desenvolvedor Front-End estão: a criação de layouts responsivos, semânticos e acessíveis; a programação das interações do usuário no Client-Side; e, a programação de recursos de ranqueamento em mecanismos de busca e pesquisa, como o Google
+            </p>
+            <img src="https://www.impacta.com.br/blog/wp-content/uploads/2022/10/O-que-e-um-desenvolvedor-front-end-2.png" alt="">
+        </section>
+        <section>
+            <h2 id="3">Principais tecnologias usadas no Front-End</h2>
+            <div id="stacks">
+                <div class="tech">
+                    <img src="https://cdn.icon-icons.com/icons2/1488/PNG/512/5352-html5_102567.png">
+                    <div class="sider">
+                        <h3>Html</h3>
+                        <p>Estruturação do conteúdo da página web</p>
+                    </div>
+                </div>
+                <div class="tech">
+                    <img src="https://logospng.org/download/css-3/logo-css-3-768.png">
+                    <div class="sider">
+                        <h3>Css</h3>
+                        <p>Estilização do conteúdo da página web</p>
+                    </div>
+                </div>
+                <div class="tech">
+                    <img src="data:image/png;base64,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">
+                    <div class="sider">
+                        <h3>JavaScript</h3>
+                        <p>Interações do conteúdo da página web</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<aside>
+    <nav>
+        <h2>Pesquisa</h2>
+        <ul>
+            <li><a href="#1">O que é desenvolvimento Front-End?</a></li>
+            <li><a href="#2">O que faz o desenvolvedor Front-End?</a></li>
+            <li><a href="#3">Principais tecnologias usadas no Front-End</a></li>
+        </ul>
+    </nav>
+</aside>
+</body>
+</html>

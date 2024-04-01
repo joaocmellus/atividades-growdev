@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <h1>Cadastro de curriculo</h1>
+        <form>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label>
+                    <span>Nome:</span>
+                    <input type="text" name="nome">
+                </label>
+                
+                <label>
+                    <span>Endereço:</span>
+                    <input type="text" name="endereco">
+                </label>
+                
+                <label>
+                    <span>Cidade:</span> 
+                    <input type="text" name="cidade">
+                </label>
+                
+                <label>
+                    <span>Estado:</span>
+                    <select name="estado">
+                        <option value="rs">Rio Grande do Sul</option>
+                    </select>
+                </label>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+                <label for="cargo">
+                    Natureza do Cargo:
+                </label>
+                <div id="cargo">
+                    <label>
+                        <input type="radio" name="cargo" value="gerencia">
+                        <span>Gerência</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="cargo" value="financeiro">
+                        <span>Financeiro</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="cargo" value="recepcao">
+                        <span>Recepção</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="cargo" value="administrativo">
+                        <span>Administrativo</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="cargo" value="juridico">
+                        <span>Jurídico</span>
+                    </label>                
+                </div>
+                    
+                <label for="interesse">
+                    Área de interesse:
+                </label>
+                <div id="interesse">
+                    <label>
+                        <input type="checkbox" name="interesse" value="computacao">
+                        <span>Computação</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interesse" value="biologia">
+                        <span>Biologia</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interesse" value="meio-ambiente">
+                        <span>Meio</span> Ambiente
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interesse" value="engenharia">
+                        <span>Engenharia</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interesse" value="historia">
+                        <span>História</span>
+                    </label>
+                </div>
+                
+                <label>
+                    Mini-currículo:
+                    <textarea name="curriculo"></textarea>
+                </label>
+            </fieldset>
+    
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+    </main>
+    <script src="./scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JS</title>
+</head>
+<body>
+<script>
+
+let biblioteca = [];
+let contagem = 0;
+do {
+    const livro = {};
+
+    livro.titulo = prompt('Insira o título do livro:');
+    livro.autor  = prompt('Insira o nome do autor do livro:');
+    livro.pagNum = Number(prompt('Insira o número de páginas do livro:'));
+    livro.lido   = confirm('O livro foi lido?');
+
+    biblioteca.push(livro);
+} while (confirm('Deseja cadastrar mais um livro?'));
+
+for (const livro of biblioteca) {
+    console.log(`Título: ${livro.titulo}\nAutor: ${livro.autor}\nLido: ${livro.lido ? 'Sim' : 'Não'}\nNº de págians: ${livro.pagNum}`);
+}
+
+const excluirTitulo = prompt('Insira um título para ser excluído');
+
+const novaBiblioteca = [];
+for (const livro of biblioteca) {
+    if (livro.titulo == excluirTitulo) {
+        continue;
+    }
+    novaBiblioteca.push(livro);
+}
+biblioteca = novaBiblioteca;
+
+const tituloLido = prompt('Insira um título para ser excluído');
+
+
+
+</script>
+</body>
+</html>

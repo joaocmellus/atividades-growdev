@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios Arrays JS</title>
+</head>
+<body>
+<script>
+// Degug
+const gerarArray = (qtdValores, stringValue=false) => {
+    let n = 0;
+    return Array.from({ length: qtdValores }, () => { n++; return stringValue ? String(n) : n;})
+};
+// --Debug
+
+
+// 1. Desenvolva um algoritmo para percorrer um vetor de 15 elementos
+// inteiros já preenchido e imprima todos os valores pares.
+
+const array15 = gerarArray(15);
+
+for (const num of array15) {
+    if ( num%2 == 0 ) {
+        console.log(num);
+    }
+}
+
+// 2. Desenvolva um algoritmo para percorrer um vetor de 20 elementos
+// inteiros e no final mostre a soma de todos os elementos.
+
+const array20 = gerarArray(20);
+let soma = 0;
+
+for (const num of array20) {
+    soma += num;
+}
+
+console.log(soma);
+
+// 3. Desenvolva um algoritmo que preenche um vetor com os 4
+// primeiros números perfeitos.
+
+const vetorNumPer = [];
+
+let num = 1;
+while (vetorNumPer.length != 4) {
+    let somaNumPer = 0;
+    for (let i = 1; i <= (num / 2); i++) {
+        if ( !(num % i) ) {
+            somaNumPer += i;
+        }
+    }
+    if (somaNumPer == num) {
+        vetorNumPer.push(num);
+    }
+    num++;
+}
+
+console.log(vetorNumPer);
+
+// 4. Desenvolva um algoritmo que declare uma lista de 10 números e
+// solicite um número para o usuário e no final informe se o número
+// que o usuário digitou está dentro da lista ou não.
+
+const array = [];
+for (let i = 0; i < 10; i++) {
+    array.push(i);   
+}
+// const valorUsuario = Number(prompt('Insira um número:'));
+const valorUsuario = 9;
+
+let existe = false;
+for (const item of array) {
+    if (item === valorUsuario) {
+        existe = true;
+        break;
+    }
+}
+console.log(existe ? 'O número escolhido existe no array' : 'O número escolhido NÃO existe');
+
+// 5. Escreva um algoritmo que solicite ao usuário a entrada de 5 nomes,
+// e que exiba a lista desses nomes na tela. Após exibir essa lista, o
+// programa deve mostrar também os nomes na ordem inversa em
+// que o usuário os digitou.
+
+const nomes = gerarArray(5, true); //debug
+// const nomes = [];
+
+// for (let i = 0; i < 5; i++) {
+//     nomes.push(prompt(`Insira o ${i+1}º nome:`));    
+// }
+
+console.log(nomes)
+console.log(nomes.reverse());
+</script>
+</body>
+</html>

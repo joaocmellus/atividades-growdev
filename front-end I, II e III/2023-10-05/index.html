@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano de Estudo</title>
+</head>
+
+<body>
+    <header>
+        <h1>Plano de Estudo</h1>
+        <img style="width: 300px;" src="./images/image-bonita.png" alt="" srcset="">
+    </header>
+    <main>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th><img style="width: 50px;" src="./images/horario.png" alt="" srcset=""> </th>
+                        <th>SEGUNDA </th>
+                        <th>TERÇA </th>
+                        <th>QUARTA </th>
+                        <th>QUINTA </th>
+                        <th>SEXTA </th>
+                        <th>SÁBADO </th>
+                        <th>DOMINGO </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>08:00-12:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Descansar</td>
+                    </tr>
+
+                    <tr>
+                        <td>12:00-13:00 </td>
+                        <td colspan="7">Almoçar</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>13:00 - 15:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td rowspan="3">Descansar</td>
+                    </tr>
+
+                    <tr>
+                        <td>15:00 - 18:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>18:00 - 22:30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>22:30 - 08:00</td>
+                        <td colspan="7" style="text-align: center;"> Dormir </td>
+                    </tr>
+
+                </tbody>
+
+                <tfoot>
+                    <tr style="text-align: center;">
+                        <td colspan="8"> <img src="./images/growdev.png"></td>
+                    </tr>
+        </section>
+
+
+        </tfoot>
+        </table>
+    </main>
+    <footer>
+        Atividade prática - Tabela Cronograma de Estudos - ©Growdev 2022
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+
+        border-collapse: collapse;
+
+        padding: 15px;
+    }
+
+    body {
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+
+    }
+</style>

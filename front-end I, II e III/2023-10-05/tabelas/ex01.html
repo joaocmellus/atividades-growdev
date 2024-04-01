@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 1</title>
+
+  <style>
+    body {
+      text-align: center;
+    }
+    table {
+      margin: 1rem auto;
+      width: 300px;
+      height: 100px;
+      border-collapse: collapse;
+    }
+    td {
+      border: 2px solid #000;
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <h1>Tabelas HTML</h1>
+  </header>
+  <main style="display:flex; gap: 30px; justify-content: space-around; width: 100%; flex-direction: column;">
+
+    <section>
+      <h2>Tabela 1</h2>
+      <table>
+        <tbody>
+          <tr style="text-align: start;">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+          <tr style="text-align: center;">
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+          <tr style="text-align: end;">
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  
+    <section>
+      <h2>Tabela 2</h2>
+      <table>
+        <tbody>
+          <tr style="text-align: start;">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+          <tr style="text-align: center;">
+            <td colspan="3">4</td>
+          </tr>
+          <tr style="text-align: start;">
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  
+    <section>
+      <h2>Tabela 3</h2>
+      <table>
+        <tbody>
+          <tr style="text-align: start;">
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="3" style="text-align: center;">3</td>
+          </tr>
+          <tr style="text-align: center;">
+            <td colspan="2">4</td>
+    
+          </tr>
+          <tr style="text-align: start;">
+            <td>5</td>
+            <td>6</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+</body>
+</html>

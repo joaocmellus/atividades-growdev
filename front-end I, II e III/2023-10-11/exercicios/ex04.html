@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1#0">
+    <title>Exercício 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            width: 100%;
+            position: absolute;
+            text-align: center;
+        }
+
+        .box {
+            width: 20vh;
+            height: 20vh;
+            background-color: #222;
+            margin: 0.5vh;
+        }
+        
+        #left {
+            position: absolute;
+            top:  0;
+            left: 0;
+        }
+
+        #left .box {
+            position: relative;
+            right: 0.5vh;
+            bottom: 0.5vh;
+            float: left;
+        }
+        
+        #left .break {
+            clear: left;
+        }
+        
+        #right {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        
+        #right .box {
+            position: relative;
+            left: 0.5vh;
+            top: 0.5vh;
+            float: right;
+        }
+
+        #right .break {
+            clear: right;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav><a href="../index.html">voltar &crarr;</a></nav>
+    </header>
+    <main>
+        <div id="left">
+            <div class="box" id="box-1"></div>
+            <div class="box" id="box-2"></div>
+            <div class="box" id="box-3"></div>
+
+            <div class="box break" id="box-4"></div>
+            <div class="box" id="box-5"></div>
+
+            <div class="box break" id="box-6"></div>
+        </div>
+        <div id="right">
+            <div class="box" id="box-7"></div>
+
+            <div class="box break" id="box-8"></div>
+            <div class="box" id="box-9"></div>
+
+            <div class="box break" id="box-10"></div>
+            <div class="box" id="box-11"></div>
+            <div class="box" id="box-12"></div>
+        </div>
+    </main>
+</body>
+</html>
